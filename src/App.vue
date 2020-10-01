@@ -13,3 +13,13 @@ import NavComponent from "@/components/Nav.vue";
 })
 export default class Home extends Vue {}
 </script>
+
+<style lang="scss">
+* {
+  font-family: "Ropa Sans", sans-serif;
+}
+
+:root {
+  --gray-color: #4f4f4f;
+}
+</style>
