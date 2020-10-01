@@ -1,6 +1,8 @@
 <template>
-  <NavComponent />
-  <router-view />
+  <div class="container">
+    <nav-component />
+    <router-view />
+  </div>
 </template>
 
 <script lang="ts">
@@ -17,6 +19,15 @@ export default class Home extends Vue {}
 <style lang="scss">
 * {
   font-family: "Ropa Sans", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("/img/blob.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right center;
 }
 
 :root {

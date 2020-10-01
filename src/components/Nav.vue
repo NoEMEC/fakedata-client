@@ -1,5 +1,5 @@
 <template>
-  <nav class="container">
+  <nav>
     <div class="row">
       <div class="column">
         <a href="/">
@@ -26,11 +26,10 @@
   </nav>
 </template>
 
-<script>
-export default {};
-</script>
-
 <style lang="scss" scoped>
+nav {
+  height: 70px;
+}
 .logo {
   sup {
     font-size: small;
