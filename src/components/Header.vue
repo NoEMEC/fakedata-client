@@ -6,6 +6,14 @@
         or GraphQL, for testing <br />
         and prototyping.
       </h2>
+
+      <div class="copyright">
+        <img src="/img/svg-icons/code.svg" alt="Code icon" />
+        <span>With</span>
+        <img src="/img/svg-icons/heart.svg" alt="Heart icon" />
+        <span>by</span>
+        <a href="https://noemec.net">NoEMEC</a>
+      </div>
     </div>
 
     <div class="column">
@@ -26,4 +34,17 @@ export default class Header extends Vue {}
 </script>
 
 <style lang="scss" scoped>
+.row {
+  align-items: center;
+}
+h2 {
+  color: var(--gray-color);
+}
+.copyright {
+  display: flex;
+  align-items: center;
+  * {
+    margin-right: 0.2rem;
+  }
+}
 </style>
