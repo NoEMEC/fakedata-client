@@ -1,30 +1,36 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+  <div class="container">
+    <nav-component />
+    <router-view />
   </div>
-  <router-view />
 </template>
 
+<script lang="ts">
+import { Options, Vue } from "vue-class-component";
+import NavComponent from "@/components/Nav.vue";
+@Options({
+  components: {
+    NavComponent
+  }
+})
+export default class Home extends Vue {}
+</script>
+
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+* {
+  font-family: "Ropa Sans", sans-serif;
 }
 
-#nav {
-  padding: 30px;
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("/img/blob.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right center;
+}
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+:root {
+  --gray-color: #4f4f4f;
 }
 </style>
