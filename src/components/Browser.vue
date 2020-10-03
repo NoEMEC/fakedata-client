@@ -9,9 +9,7 @@
     <div class="browser__url">
       <p>https://api.fakedata.co<strong>/users</strong></p>
 
-      <div class="url__type">
-        GET
-      </div>
+      <div class="url__type">GET</div>
     </div>
 
     <div class="browser__response">
@@ -33,13 +31,13 @@
 </template>
 
 <script lang="ts">
-import { Options, Vue } from "vue-class-component";
+import { Options, Vue } from 'vue-class-component';
 declare let hljs: any;
 
 @Options({
   mounted() {
     hljs.initHighlightingOnLoad();
-    document.querySelectorAll("pre code").forEach(block => {
+    document.querySelectorAll('pre code').forEach(block => {
       hljs.highlightBlock(block);
     });
   }

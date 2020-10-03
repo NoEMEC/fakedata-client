@@ -6,8 +6,8 @@
 </template>
 
 <script lang="ts">
-import { Options, Vue } from "vue-class-component";
-import NavComponent from "@/components/Nav.vue";
+import { Options, Vue } from 'vue-class-component';
+import NavComponent from '@/components/Nav.vue';
 @Options({
   components: {
     NavComponent
@@ -18,13 +18,13 @@ export default class Home extends Vue {}
 
 <style lang="scss">
 * {
-  font-family: "Ropa Sans", sans-serif;
+  font-family: 'Ropa Sans', sans-serif;
 }
 
 body {
   margin: 0;
   padding: 0;
-  background-image: url("/img/blob.svg");
+  background-image: url('/img/blob.svg');
   background-repeat: no-repeat;
   background-size: contain;
   background-position: right center;

@@ -23,8 +23,8 @@
 </template>
 
 <script lang="ts">
-import { Options, Vue } from "vue-class-component";
-import BrowserComponent from "@/components/Browser.vue";
+import { Options, Vue } from 'vue-class-component';
+import BrowserComponent from '@/components/Browser.vue';
 @Options({
   components: {
     BrowserComponent
